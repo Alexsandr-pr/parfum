@@ -11,7 +11,7 @@
 	<body>
 		<div class="wrapper">
 			
-			<header class="header ">
+			<header class="header fix-offset">
     <div class="header__container">
         <div data-da=".header-mobile__body,767.97,4" class="header__top header-top">
             <button class="header-top__select">Ваш город: Москва</button>
@@ -69,13 +69,15 @@
                 </label>
             </div>
             <div class="header-bottom__items">
-                <button class="header-bottom__item">
-                    <picture>
-                        <source media="(min-width:768px )" srcset="img/icon/user-desctop.svg" type="image/svg+xml">
-                        <source media="(max-width:767.98px)" srcset="img/icon/user-mobile.svg" type="image/svg+xml">
-                        <img src="img/icon/user-mobile.svg" alt="User">
-                    </picture>
-                </button >
+                <button  class="header-bottom__item">
+                    <a href="account.html">
+                        <picture>
+                            <source media="(min-width:768px )" srcset="img/icon/user-desctop.svg" type="image/svg+xml">
+                            <source media="(max-width:767.98px)" srcset="img/icon/user-mobile.svg" type="image/svg+xml">
+                            <img src="img/icon/user-mobile.svg" alt="User">
+                        </picture>
+                    </a>
+                <button/ >
                 <button class="header-bottom__item header-bottom__item-2">
                     <picture>
                         <source media="(min-width:768px )" srcset="img/icon/cart-desctop.svg" type="image/svg+xml">
