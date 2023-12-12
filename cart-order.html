@@ -102,140 +102,131 @@
     </div>
     
 </header>
+            
 			<main  class="main">
+
                 <div class="main__breadcrumb breadcrumb">
                     <div class="breadcrumb__container">
                         <div class="breadcrumb__title title-30">
-                            <h1>Каталог</h1>
+                            <h1>Оформление заказа</h1>
                         </div>
                         <ul class="breadcrumb__list">
                             <li class="breadcrumb__item">
                                 <a href="#" class="breadcrumb__link">Главная</a>
                             </li>
                             <li class="breadcrumb__item">
-                                <a href="#" class="breadcrumb__link">Унисекс</a>
-                            </li>
-                            <li class="breadcrumb__item">
-                                <a href="#" class="breadcrumb__link">The devil is a loser by Mushfig</a>
+                                <a href="#" class="breadcrumb__link">Оформление заказа</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="main__login-block login-block">
-                    <div class="login-block__container">
-                        <div class="login-block__item">
-                            <div class="login-block__title title-24">
-                                <h3>Вход</h3>
+
+                <div class="main__cart-order cart-order">
+                    <div class="cart-order__container">
+                        <div class="cart-order__body">
+                            <div class="user-content__title title-24">
+                                <h2>Оплата и доставка</h2>
                             </div>
-                            <form class="login-block__form">
-                                <label  class="login-block__label input-block">
-                                    <p class="login-block__text input-block__text">Имя пользователя или Email *</p>
-                                    <input name="email" autocomplete="" type="text" class="login-block__input input-block__input" required placeholder="Elena71@gmail.com">
-                                </label>
-                                <label class="login-block__label input-block">
-                                    <p class="login-block__text input-block__text">Пароль <span>*</span></p>
-                                    <input name="email" autocomplete="" type="text" class="login-block__input input-block__input" required ">
-                                </label>
-                                <ul class="re-catcha pol-list">
-                                    <li class="pol-list__item">
-                                        <label class="pol-list__label">
-                                            <input type="checkbox" required name="pol" class="pol-list__input">
-                                            <span class="pol-list__span"></span>
-                                            <p class="pol-list__p">Я не робот</p>
-                                        </label>
-                                    </li>
-                                </ul>
-                                <ul class="login-block__pol-list pol-list">
-                                    <li class="pol-list__item">
-                                        <label class="pol-list__label">
-                                            <input type="checkbox" name="pol" required class="pol-list__input">
-                                            <span class="pol-list__span"></span>
-                                            <p class="pol-list__p">Запомнить меня</p>
-                                        </label>
-                                    </li>
-                                </ul>
-                                <div class="login-block__button button-add-to-cart-obol">
-                                    <button type="submit" class="login-block__btn button-add-to-cart"><span>Войти</span></button>
+                            <form class="cart-order__form ">
+                                <div class="cart-order__form-items">
+                                    <label class="user-content__label input-block">
+                                        <p class="user-content__text input-block__text">Имя <span>*</span></p>
+                                        <input name="name" autocomplete="on" type="text" class="user-content__input input-block__input" required>
+                                    </label>
+                                    <label class="user-content__label input-block">
+                                        <p class="user-content__text input-block__text">Фамилия  <span>*</span></p>
+                                        <input name="surname" autocomplete="" type="text" class="user-content__input input-block__input" required>
+                                    </label>
                                 </div>
-                                <a class="login-block__link" href="#">Забыли свой пароль?</a>
+                                <div class="cart-order__form-items">
+                                    <label class="user-content__label input-block">
+                                        <p class="user-content__text input-block__text">Страна / регион <span>*</span></p>
+                                        <input name="country" autocomplete="on" type="text" class="user-content__input input-block__input" required>
+                                    </label>
+                                    <label class="user-content__label input-block">
+                                        <p class="user-content__text input-block__text">Адрес<span>*</span></p>
+                                        <input name="adress" autocomplete="" type="text" class="user-content__input input-block__input" required>
+                                    </label>
+                                </div>
+                                <div class="cart-order__form-items">
+                                    <label class="user-content__label input-block">
+                                        <p class="user-content__text input-block__text">Населённый пункт<span>*</span></p>
+                                        <input name="locality" autocomplete="on" type="text" class="user-content__input input-block__input" required>
+                                    </label>
+                                    <label class="user-content__label input-block">
+                                        <p class="user-content__text input-block__text"> Область / район<span>*</span></p>
+                                        <input name="region" autocomplete="" type="text" class="user-content__input input-block__input" required>
+                                    </label>
+                                </div>
+                                <div class="cart-order__form-items">
+                                    <label class="user-content__label input-block">
+                                        <p class="user-content__text input-block__text">Почтовый индекс<span>*</span></p>
+                                        <input name="zip" autocomplete="on" type="text" class="user-content__input input-block__input" required>
+                                    </label>
+                                    <label class="user-content__label input-block">
+                                        <p class="user-content__text input-block__text">Телефон<span>*</span></p>
+                                        <input name="tel-phone" autocomplete="on" type="tel" class="user-content__input input-block__input" required>
+                                    </label>
+                                </div>
+                                <label class="user-content__label input-block">
+                                    <p class="user-content__text input-block__text">Email<span>*</span></p>
+                                    <input name="email" autocomplete="on" type="email" class="user-content__input input-block__input" required>
+                                </label>
+                                <div class="cart-order__titles title-24">
+                                    <h2>Детали заказа</h2>
+                                </div>
+                                <label class="user-content__label input-block">
+                                    <p class="user-content__text input-block__text">Что бы вы хотели, чтобы мы написали на флаконе? (необязательно)<span>*</span></p>
+                                    <input name="inscription" autocomplete="on" type="text" class="user-content__input input-block__input" placeholder="Например, «Любимой мамуле»" required>
+                                </label>
                             </form>
                         </div>
-                        <div class="login-block__item">
-                            <div class="login-block__title title-24">
-                                <h3>Регистрация</h3>
+                        <div class="cart-order__modal cart-modal">
+                            <div class="user-content__title title-24">
+                                <h2>Ваш заказ</h2>
                             </div>
-                            <form class="login-block__form">
-                                <div class="login-block__text">
-                                    <p>При регистрации вы получите 100 бонусных баллов</p>
+                            <div class="cart-modal__item item-order">
+                                <div class="item-order__title title-24">
+                                    <h3>2 товара на сумму:</h3>
+                                    <input type="text" disabled value="9300 ₽" readonly>
                                 </div>
-                                <label class="login-block__label input-block">
-                                    <p class="login-block__text input-block__text">Email *</p>
-                                    <input name="email" autocomplete="" type="text" class="login-block__input input-block__input" required >
-                                </label>
-                                
-                                <div class="login-block__text">
-                                    <p>Пол</p>
-                                </div>
-
-                                <div class="login-block__check check-button">
-                                    <label  class="check-button__label">
-                                        <input type="radio" name="male" checked class="check-button__input">
-                                        <span class="check-button__span"></span>
-                                        <p class="check-button__p">Ж</p>
-                                    </label>
-                                    <label  class="check-button__label">
-                                        <input type="radio" name="male" class="check-button__input">
-                                        <span class="check-button__span"></span>
-                                        <p class="check-button__p">М</p>
-                                    </label>
-                                </div>
-
-
-                                <div class="login-block__text">
-                                    <p>Ссылка для установки нового пароля будет отправлена на ваш email</p>
-                                </div>
-                                <ul class="re-catcha pol-list">
-                                    <li class="pol-list__item">
-                                        <label class="pol-list__label">
-                                            <input type="checkbox" required name="pol" class="pol-list__input">
-                                            <span class="pol-list__span"></span>
-                                            <p class="pol-list__p">Я не робот</p>
-                                        </label>
+                                <ul class="item-order__list">
+                                    <li class="item-order__item">
+                                        <p>Доставка</p>
+                                        <p>sdads</p>
+                                    </li>
+                                    <li class="item-order__item">
+                                        <p>Скидка</p>
+                                        <p>100 баллов</p>
+                                    </li>
+                                    <li class="item-order__item">
+                                        <p>Кэшбэк</p>
+                                        <p>460 баллов</p>
+                                    </li>
+                                    <li class="item-order__item">
+                                        <p>Способ оплаты</p>
+                                        <p>Тинькофф Банк</p>
                                     </li>
                                 </ul>
-                                <ul class="login-block__pol-list pol-list">
-                                    <li class="pol-list__item">
-                                        <label class="pol-list__label">
-                                            <input type="checkbox" name="pol" required class="pol-list__input">
-                                            <span class="pol-list__span"></span>
-                                            <p class="pol-list__p">Запомнить меня</p>
-                                        </label>
-                                    </li>
-                                </ul>
-                                <div class="login-block__button button-add-to-cart-obol">
-                                    <button type="submit" class="login-block__btn button-add-to-cart"><span>Регистрация</span></button>
+
+                                <div class="item-order__info">
+                                    <p>Оплата через www.tinkoff.ru</p>
                                 </div>
-                            </form>
+                                <p class="item-order__text">Ваши личные данные будут использоваться для обработки ваших заказов, упрощения вашей работы с сайтом и для других целей, описанных в нашей политика конфиденциальности</p>
+                                <div class="item-order__title title-24">
+                                    <h3>К оплате:</h3>
+                                    <input type="text" disabled value="9300 ₽" readonly>
+                                </div>
+                                <div class="item-order__button button-add-to-cart-obol">
+                                    <button type="submit" class="item-order__btn button-add-to-cart"><span>Подтвердить и оплатить заказ</span></button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
 			</main>
 
-            <div id="popap-review" class="popap" >
-                <div data-close="popap-close" class="popap__wrapper">
-                    <div class="popap__body popap__package popap-package">
-                        <button  tabindex="0" data-close="popap-close" class="popap__close"></button>
-                        <div class="popap-package__title title-24">
-                            <h3>Вы успешно зарегистрированы!</h3>
-                        </div>
-                        <a class="popap-package__link">
-                            <div class="button-add-to-cart-obol">
-                                <button type="submit" class="button-add-to-cart"><span> Перейти к покупкам</span></button>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
 
 			<footer class="footer">
     <div class="footer__container">
