@@ -79,11 +79,13 @@
                     </a>
                 <button/ >
                 <button class="header-bottom__item header-bottom__item-2">
-                    <picture>
-                        <source media="(min-width:768px )" srcset="img/icon/cart-desctop.svg" type="image/svg+xml">
-                        <source media="(max-width:767.98px)" srcset="img/icon/cart-mobile.svg" type="image/svg+xml">
-                        <img src="img/icon/cart-desctop.svg" alt="Cart">
-                    </picture>
+                    <a href="cart.html">
+                        <picture>
+                            <source media="(min-width:768px )" srcset="img/icon/cart-desctop.svg" type="image/svg+xml">
+                            <source media="(max-width:767.98px)" srcset="img/icon/cart-mobile.svg" type="image/svg+xml">
+                            <img src="img/icon/cart-desctop.svg" alt="Cart">
+                        </picture>
+                    </a>
                 </button>
             </div>
             
@@ -110,14 +112,8 @@
                         </div>
                         <ul class="breadcrumb__list">
                             <li class="breadcrumb__item">
-                                <a href="#" class="breadcrumb__link">Главная</a>
-                            </li>
-                            <li class="breadcrumb__item">
-                                <a href="#" class="breadcrumb__link">Унисекс</a>
-                            </li>
-                            <li class="breadcrumb__item">
-                                <a href="#" class="breadcrumb__link">The devil is a loser by Mushfig</a>
-                            </li>
+                                <a href="start.html" class="breadcrumb__link">Главная</a>
+                            </li> 
                         </ul>
                     </div>
                 </div>
@@ -130,11 +126,14 @@
                             <form class="login-block__form">
                                 <label  class="login-block__label input-block">
                                     <p class="login-block__text input-block__text">Имя пользователя или Email *</p>
-                                    <input name="email" autocomplete="" type="text" class="login-block__input input-block__input" required placeholder="Elena71@gmail.com">
+                                    <input name="email" autocomplete="on" type="email" class="login-block__input input-block__input" required placeholder="Elena71@gmail.com">
                                 </label>
                                 <label class="login-block__label input-block">
                                     <p class="login-block__text input-block__text">Пароль <span>*</span></p>
-                                    <input name="email" autocomplete="" type="text" class="login-block__input input-block__input" required ">
+                                    <input id="password-login" name="password" autocomplete="off"  type="password" class=" login-block__input input-block__input" required">
+                                    <div  data-password="password-login" class="password">
+                                        <img  src="img/icon/password.svg" alt="password">
+                                    </div>
                                 </label>
                                 <ul class="re-catcha pol-list">
                                     <li class="pol-list__item">
@@ -169,8 +168,8 @@
                                     <p>При регистрации вы получите 100 бонусных баллов</p>
                                 </div>
                                 <label class="login-block__label input-block">
-                                    <p class="login-block__text input-block__text">Email *</p>
-                                    <input name="email" autocomplete="" type="text" class="login-block__input input-block__input" required >
+                                    <p class="login-block__text input-block__text">Email <span>*</span></p>
+                                    <input name="email" autocomplete="on" type="email" class="login-block__input input-block__input" required >
                                 </label>
                                 
                                 <div class="login-block__text">
@@ -178,15 +177,15 @@
                                 </div>
 
                                 <div class="login-block__check check-button">
-                                    <label  class="check-button__label">
-                                        <input type="radio" name="male" checked class="check-button__input">
-                                        <span class="check-button__span"></span>
-                                        <p class="check-button__p">Ж</p>
+                                    <label class="pol-list__label">
+                                        <input type="radio"  name="pol" value="female" class="pol-list__input">
+                                        <span class="pol-list__span"></span>
+                                        <p class="pol-list__p">Ж</p>
                                     </label>
-                                    <label  class="check-button__label">
-                                        <input type="radio" name="male" class="check-button__input">
-                                        <span class="check-button__span"></span>
-                                        <p class="check-button__p">М</p>
+                                    <label class="pol-list__label">
+                                        <input type="radio" name="pol" value="male" class="pol-list__input">
+                                        <span class="pol-list__span"></span>
+                                        <p class="pol-list__p">М</p>
                                     </label>
                                 </div>
 
@@ -197,7 +196,7 @@
                                 <ul class="re-catcha pol-list">
                                     <li class="pol-list__item">
                                         <label class="pol-list__label">
-                                            <input type="checkbox" required name="pol" class="pol-list__input">
+                                            <input type="checkbox" required  class="pol-list__input">
                                             <span class="pol-list__span"></span>
                                             <p class="pol-list__p">Я не робот</p>
                                         </label>
@@ -206,7 +205,7 @@
                                 <ul class="login-block__pol-list pol-list">
                                     <li class="pol-list__item">
                                         <label class="pol-list__label">
-                                            <input type="checkbox" name="pol" required class="pol-list__input">
+                                            <input type="checkbox" name="memory"  required class="pol-list__input">
                                             <span class="pol-list__span"></span>
                                             <p class="pol-list__p">Запомнить меня</p>
                                         </label>

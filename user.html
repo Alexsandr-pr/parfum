@@ -79,11 +79,13 @@
                     </a>
                 <button/ >
                 <button class="header-bottom__item header-bottom__item-2">
-                    <picture>
-                        <source media="(min-width:768px )" srcset="img/icon/cart-desctop.svg" type="image/svg+xml">
-                        <source media="(max-width:767.98px)" srcset="img/icon/cart-mobile.svg" type="image/svg+xml">
-                        <img src="img/icon/cart-desctop.svg" alt="Cart">
-                    </picture>
+                    <a href="cart.html">
+                        <picture>
+                            <source media="(min-width:768px )" srcset="img/icon/cart-desctop.svg" type="image/svg+xml">
+                            <source media="(max-width:767.98px)" srcset="img/icon/cart-mobile.svg" type="image/svg+xml">
+                            <img src="img/icon/cart-desctop.svg" alt="Cart">
+                        </picture>
+                    </a>
                 </button>
             </div>
             
@@ -112,13 +114,11 @@
                         </div>
                         <ul class="breadcrumb__list">
                             <li class="breadcrumb__item">
-                                <a href="#" class="breadcrumb__link"><span>Главная</span> <i class="fa-solid fa-house"></i></a>
+                                <a href="start.html" class="breadcrumb__link">Главная </a>
                             </li>
+                            
                             <li class="breadcrumb__item">
-                                <a href="#" class="breadcrumb__link">Унисекс</a>
-                            </li>
-                            <li class="breadcrumb__item">
-                                <a href="#" class="breadcrumb__link">The devil is a loser by Mushfig</a>
+                                <a href="#" class="breadcrumb__link">Панель управления</a>
                             </li>
                         </ul>
                     </div>
@@ -389,8 +389,8 @@
                                                 <p>2 августа</p>
                                             </div>
                                         </div>
-                                        <div class="order-block__booking order-booking">
-                                            <div class="order-booking__trigger filter__button">
+                                        <div data-spollers class="order-block__booking order-booking">
+                                            <div data-spoller class="order-booking__trigger filter__button _spoller-init">
                                                 <button class="filter__btn filter__btn-popular"><p>Состав заказа</p> <span><i class="fa-solid fa-chevron-up"></i></span></button>
                                             </div>
                                             <div class="order-booking__content">
@@ -429,8 +429,8 @@
                                                 <p>2 августа</p>
                                             </div>
                                         </div>
-                                        <div class="order-block__booking order-booking">
-                                            <div class="order-booking__trigger filter__button">
+                                        <div data-spollers class="order-block__booking order-booking">
+                                            <div data-spoller class="order-booking__trigger filter__button _spoller-init">
                                                 <button class="filter__btn filter__btn-popular"><p>Состав заказа</p> <span><i class="fa-solid fa-chevron-up"></i></span></button>
                                             </div>
                                             <div class="order-booking__content">
@@ -464,8 +464,8 @@
                                                 <p>29 июля</p>
                                             </div>
                                         </div>
-                                        <div class="order-block__booking order-booking">
-                                            <div class="order-booking__trigger filter__button">
+                                        <div data-spollers="" class="order-block__booking order-booking">
+                                            <div data-spoller="" class="order-booking__trigger filter__button  _spoller-init">
                                                 <button class="filter__btn filter__btn-popular"><p>Состав заказа</p> <span><i class="fa-solid fa-chevron-up"></i></span></button>
                                             </div>
                                             <div class="order-booking__content">
@@ -498,8 +498,8 @@
                                                 <p>26 июля</p>
                                             </div>
                                         </div>
-                                        <div class="order-block__booking order-booking">
-                                            <div class="order-booking__trigger filter__button">
+                                        <div data-spollers="" class="order-block__booking order-booking">
+                                            <div data-spoller="" class="order-booking__trigger filter__button  _spoller-init">
                                                 <button class="filter__btn filter__btn-popular"><p>Состав заказа</p> <span><i class="fa-solid fa-chevron-up"></i></span></button>
                                             </div>
                                             <div class="order-booking__content">
@@ -533,8 +533,8 @@
                                                 <p>24 июля</p>
                                             </div>
                                         </div>
-                                        <div class="order-block__booking order-booking">
-                                            <div class="order-booking__trigger filter__button">
+                                        <div data-spollers class="order-block__booking order-booking">
+                                            <div data-spoller="" class="order-booking__trigger filter__button _spoller-init">
                                                 <button class="filter__btn filter__btn-popular"><p>Состав заказа</p> <span><i class="fa-solid fa-chevron-up"></i></span></button>
                                             </div>
                                             <div class="order-booking__content">
@@ -686,15 +686,24 @@
                                     </div>
                                     <label class="user-content__label input-block">
                                         <p class="user-content__text input-block__text">Действующий пароль (не заполняйте, чтобы оставить прежний)</p>
-                                        <input name="password" autocomplete="on" type="text" class="user-content__input input-block__input" required>
+                                        <input id="password-active" name="password-active" autocomplete="on" type="password" class="user-content__input input-block__input" required>
+                                        <div  data-password="password-active" class="password">
+                                            <img  src="img/icon/password.svg" alt="password">
+                                        </div>
                                     </label>
                                     <label class="user-content__label input-block">
                                         <p class="user-content__text input-block__text">Новый пароль (не заполняйте, чтобы оставить прежний)</p>
-                                        <input name="new-password" autocomplete="on" type="text" class="user-content__input input-block__input" required>
+                                        <input id="new-password" name="new-password" autocomplete="on" type="password" class="user-content__input input-block__input" required>
+                                        <div  data-password="new-password" class="password">
+                                            <img  src="img/icon/password.svg" alt="password">
+                                        </div>
                                     </label>
                                     <label class="user-content__label input-block">
                                         <p class="user-content__text input-block__text">Подтвердите новый пароль</p>
-                                        <input name="confirmation-password" autocomplete="on" type="text" class="user-content__input input-block__input" required>
+                                        <input id="confirmation-password" name="confirmation-password" autocomplete="on" type="password" class="user-content__input input-block__input" required>
+                                        <div  data-password="confirmation-password" class="password">
+                                            <img  src="img/icon/password.svg" alt="password">
+                                        </div>
                                     </label>
                                     <div class="user-content__button">
                                         <div class=" button-add-to-cart-obol">
